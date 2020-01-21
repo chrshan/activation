@@ -50,7 +50,8 @@ else
   arch=32
 fi
 #Build Jetbrains Server
-wget --no-check-certificate https://pa.ci/download/shell/JetbrainsServer.zip
+#wget --no-check-certificate https://pa.ci/download/shell/JetbrainsServer.zip
+wget --no-check-certificate https://raw.githubusercontent.com/chrshan/activation/master/JetbrainsServer.zip
 unzip JetbrainsServer.zip
 if cat /etc/*-release | grep -Eqi "raspbian"; then
   mv JetbrainsServer/binaries/arm jetbrains
